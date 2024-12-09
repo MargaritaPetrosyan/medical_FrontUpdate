@@ -16,14 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.shortcuts import render
-
-def homepage(request):
-    return render(request, 'homepage.html')
-
+from medical_backend.views import homepage, services, plasticSurgery
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
-    path('', homepage, name='homepage')
+    path('', homepage, name='homepage'),
+    path('services/', services, name='services'),
+    path('plastic-surgery/', plasticSurgery, name='plasticSurgery')
 ]

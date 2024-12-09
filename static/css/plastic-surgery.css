@@ -1,0 +1,104 @@
+body {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9ff;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body .services {
+  margin-top: 100px !important;
+}
+
+h1,
+h2,
+h3,
+p,
+.service-button h3,
+.service-button p {
+  font-weight: 400; /* Normal weight */
+}
+.services {
+  font: Mulish;
+  display: flex;
+  align-items: center;
+  background-color: #ecf4fc;
+  padding: 3rem 15%;
+  border-radius: 25px;
+  position: relative;
+  margin: auto;
+  opacity: 95%;
+  width: 90%;
+  height: auto;
+  margin-bottom: 20px;
+}
+/* General Styling for the Services Section */
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Space between grid items */
+  margin-top: 60px;
+  justify-items: center; /* Centers items horizontally */
+  align-items: start; /* Aligns items at the start vertically */
+}
+
+.service-button {
+  width: 300px;
+  /* Set a fixed width */
+  height: 230px;
+  /* Set a fixed height */
+  background-color: #ecf4fc;
+  border: none;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 1.5rem;
+}
+
+/* Button Hover Effect */
+.service-button:hover {
+  transform: translateY(-5px);
+  /* Slightly lift button on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: #91c4f1;
+  /* Increase shadow on hover */
+}
+
+/* Button Text Styling */
+.service-button h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #333;
+  font: Mulish;
+}
+
+.service-icon {
+  width: 70px; /* Adjust this size to control the image width */
+  height: 70px; /* Ensures consistent image height */
+  margin-bottom: 10px;
+}
+
+.service-button p {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.4);
+  font: Mulish;
+}
+
+/* For smaller screens, adjust layout */
+@media (max-width: 768px) {
+  .services-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,352 @@
+body {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9ff;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  /* Maximum width */
+  min-width: 320px;
+  /* Minimum width for smaller devices */
+  margin: auto;
+}
+
+/* Ensure the Services Section Spacing */
+.services {
+  display: flex;
+  /* Flex might not always be necessary */
+  align-items: center;
+  background-color: #ecf4fc;
+  padding: 3rem 5%;
+  border-radius: 25px;
+  position: relative;
+  /* Relative is fine for custom alignment */
+  max-width: 90%;
+  margin: auto;
+  opacity: 95%;
+  margin-top: 100px !important;
+  /* Works unless overridden by parent */
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.services p {
+  margin-bottom: 5em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for the Service Buttons */
+.services-list {
+  display: flex;
+  flex-direction: row;
+  /* Stack buttons vertically */
+  align-items: center;
+  gap: 10px;
+  /* Center align the buttons */
+}
+
+.service-button {
+  width: 300px;
+  /* Set a fixed width */
+  height: 270px;
+  /* Set a fixed height */
+  background-color: #ecf4fc;
+  border: none;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 1.5rem;
+}
+
+/* Button Hover Effect */
+.service-button:hover {
+  transform: translateY(-5px);
+  /* Slightly lift button on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: #91c4f1;
+  /* Increase shadow on hover */
+}
+
+/* Button Text Styling */
+.service-button h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.service-button p {
+  font-size: 0.55rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Icon Styling for Service Cards */
+.search-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: auto;
+}
+
+.plastic-surgery-icon {
+  width: 50px;
+  height: 55px;
+  margin-bottom: auto;
+}
+
+.dentistry-icon {
+  width: 50px;
+  height: 55px;
+  margin-bottom: auto;
+}
+
+.clinics-icon {
+  width: 50px;
+  height: 55px;
+  margin-bottom: auto;
+}
+
+.consultation-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: auto;
+}
+
+/* General Styling for the Article Section */
+.article {
+  background-color: #ecf4fc;
+  padding: 3rem 0;
+  border-radius: 25px;
+  position: relative;
+  max-width: 90%;
+  margin: auto;
+  opacity: 95%;
+}
+
+.article h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font: Mulish;
+  margin-top: 30px;
+}
+
+.article .row {
+  display: flex;
+  gap: 33px;
+  flex-wrap: wrap;
+}
+
+/* Article Card Styling */
+.article-card {
+  margin-top: 20px;
+  width: 350px;
+  height: 450px;
+  background-color: #ecf4fc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+  /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  /* Enhanced shadow on hover */
+}
+
+/* Article Image Styling */
+.article-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  /* Ensures the image covers the space without stretching */
+}
+
+/* Article Content Styling */
+.article-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  /* Allows content to grow and fill space */
+}
+
+.article-content h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.article-content p {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+/* Footer with Learn More Link */
+.article-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.article-footer .article-link {
+  color: #6d98d9;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.article-footer .article-link span {
+  font-size: 1rem;
+  margin-left: 0.3rem;
+  /* Adds space between text and arrow */
+}
+
+/* Centering the Articles Section */
+.article .container {
+  max-width: 1140px;
+  /* Limit container width for better readability */
+  margin: 0 auto;
+}
+
+.article-more-button {
+  background-color: #6d98d9;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.6rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+/* General Section Styling */
+.contact-section {
+  padding: 2rem 0;
+}
+
+.contact-background {
+  background-color: #ecf4fc;
+  padding: 3rem 0;
+  border-radius: 25px;
+  position: relative;
+  max-width: 90%;
+  margin: auto;
+}
+
+/* Left Text Section Styling */
+.text-left {
+  color: #1a1a1a;
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font: Mulish;
+}
+
+.schedule-call-button {
+  background-color: #6d98d9;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  margin-left: 2px;
+}
+
+/* Contact Details */
+.contact-details h5 {
+  font-weight: 700;
+  margin-top: 2rem;
+  color: #333;
+}
+
+.linkedin-link {
+  display: flex;
+  align-items: center;
+  color: #6d98d9;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.linkedin-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+}
+
+/* Right Column Form Styling */
+.contact-form-wrapper {
+  background-color: #87aee7;
+  opacity: 90%;
+  /* Blue background */
+  padding: 2rem;
+  border-radius: 12px;
+  color: #ffffff;
+}
+
+.form-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.form-control::placeholder {
+  color: #ccc;
+}
+
+.form-control:focus {
+  border-color: #ffffff;
+  box-shadow: none;
+}
+
+.send-message-button {
+  background-color: #ffffff;
+  color: #458ff6;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  border: none;
+}
+
+.send-message-button:hover {
+  background-color: #dbe9ff;
+}
