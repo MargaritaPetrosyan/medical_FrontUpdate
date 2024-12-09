@@ -1,0 +1,141 @@
+body {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9ff;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+} /* Plastic Surgeons Section Styling */
+
+.dentist {
+  background-color: #ecf4fc;
+  padding: 3rem 0;
+  border-radius: 25px;
+  position: relative;
+  max-width: 90%;
+  margin: auto;
+  opacity: 95%;
+  margin-top: 100px !important;
+  margin-bottom: 50px;
+}
+
+.dentist h2 {
+  font-size: 2.5rem; /* Larger font size */
+  font-family: "Mulish", sans-serif; /* Ensure the font-family is applied */
+  color: #333; /* Darker color */
+  margin-top: 20px;
+  text-align: center; /* Center align the text */
+  font-weight: 700; /* Make it bold */
+}
+
+.row {
+  gap: 30px;
+}
+
+.dentist-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background: #ecf4fc;
+  border: none;
+  border-radius: 15px;
+  padding: 20px;
+  width: 280px;
+  height: 400px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.dentist-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  background-color: #91c4f1;
+}
+
+.dentist-image {
+  width: 150px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10%; /* Makes the image circular */
+  margin-bottom: 15px;
+}
+
+.dentist-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin: 10px 0 5px 0;
+}
+
+.dentist-title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #777;
+}
+
+/* Ensure the cards are centrally aligned */
+.row {
+  justify-content: center;
+}
+
+.search-container {
+  margin: 15px auto; /* Add some space around */
+  display: flex;
+  justify-content: center; /* Center the search bar horizontally */
+  align-items: center;
+}
+
+#doctorSearch {
+  width: 300px; /* Width of the input field */
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#doctorSearch:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#searchButton {
+  background-color: #6d98d9;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: auto;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#searchButton i {
+  font-size: 1rem;
+}
+
+#searchButton:hover {
+  background-color: #567faa;
+}
+
+#searchButton:focus {
+  outline: none;
+}
+
+/* Responsive Design for Search Bar */
+@media (max-width: 768px) {
+  #clinicSearch {
+    width: 200px; /* Narrower input for smaller screens */
+  }
+
+  #searchButton {
+    padding: 8px 12px;
+  }
+}
