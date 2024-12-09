@@ -1,0 +1,197 @@
+{% extends "base.html" %}
+
+{% block title %}Plastic Surgeons{% endblock %}
+
+{% block stylesheet %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/plastic-surgeons.css' %}" />
+
+{% endblock %}
+
+
+{% block body %}
+
+<main>
+  <!-- Plastic Surgeons Section -->
+  <section id="plastic-surgeons" class="plastic-surgeons my-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Plastic Surgeons</h2>
+      <!-- Search Bar Section -->
+      <section class="search-container">
+        <form id="doctorSearchForm">
+          <input
+                  type="text"
+                  id="doctorSearch"
+                  placeholder="Search for Doctors..."
+          />
+          <button type="submit" id="searchButton">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </section>
+
+      <div class="row justify-content-center">
+        <!-- Surgeon Card 1 -->
+        <div
+                class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center"
+        >
+          <button class="surgeon-card">
+            <img
+                    src="images/surgeon1.jpg"
+                    alt="Ashot V. Matevosyan"
+                    class="surgeon-image"
+            />
+            <h3 class="surgeon-name">Ashot V. Matevosyan</h3>
+            <p class="surgeon-title">Plastic surgeon</p>
+          </button>
+        </div>
+        <!-- Surgeon Card 2 -->
+        <div
+                class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center"
+        >
+          <button class="surgeon-card">
+            <img
+                    src="images/surgeon2.png"
+                    alt="Andrey L. Istranov"
+                    class="surgeon-image"
+            />
+            <h3 class="surgeon-name">Andrey L. Istranov</h3>
+            <p class="surgeon-title">Plastic surgeon</p>
+          </button>
+        </div>
+        <!-- Surgeon Card 3 -->
+        <div
+                class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center"
+        >
+          <button class="surgeon-card">
+            <img
+                    src="images/surgeon3.jpg"
+                    alt="Gracha M. Aslanyan"
+                    class="surgeon-image"
+            />
+            <h3 class="surgeon-name">Gracha M. Aslanyan</h3>
+            <p class="surgeon-title">Plastic surgeon</p>
+          </button>
+        </div>
+        <!-- Surgeon Card 4 -->
+        <div
+                class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center"
+        >
+          <button class="surgeon-card">
+            <img
+                    src="images/surgeon4.png"
+                    alt="Hrach K. Mikayelyan"
+                    class="surgeon-image"
+            />
+            <h3 class="surgeon-name">Hrach K. Mikayelyan</h3>
+            <p class="surgeon-title">Maxillofacial surgeon</p>
+          </button>
+        </div>
+        <!-- Surgeon Card 5 -->
+        <div
+                class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center"
+        >
+          <button class="surgeon-card">
+            <img
+                    src="images/surgeon5.png"
+                    alt="Hayko H. Kettsyan"
+                    class="surgeon-image"
+            />
+            <h3 class="surgeon-name">Hayko H. Kettsyan</h3>
+            <p class="surgeon-title">Maxillofacial surgeon</p>
+          </button>
+        </div>
+        <!-- Surgeon Card 6 -->
+        <div
+                class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center"
+        >
+          <button class="surgeon-card">
+            <img
+                    src="images/surgeon6.jpg"
+                    alt="Christina V. Grigoryan"
+                    class="surgeon-image"
+            />
+            <h3 class="surgeon-name">Christina V. Grigoryan</h3>
+            <p class="surgeon-title">Plastic surgeon</p>
+          </button>
+        </div>
+        <!-- Surgeon Card 7 -->
+        <div
+                class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center"
+        >
+          <button class="surgeon-card">
+            <img
+                    src="images/surgeon7.jpg"
+                    alt="Yevgeny A. Malyukov"
+                    class="surgeon-image"
+            />
+            <h3 class="surgeon-name">Yevgeny A. Malyukov</h3>
+            <p class="surgeon-title">Plastic surgeon</p>
+          </button>
+        </div>
+        <!-- Surgeon Card 8 -->
+        <div
+                class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center"
+        >
+          <button class="surgeon-card">
+            <img
+                    src="images/surgeon8.jpg"
+                    alt="Hayk H. Partizpanyan"
+                    class="surgeon-image"
+            />
+            <h3 class="surgeon-name">Hayk H. Partizpanyan</h3>
+            <p class="surgeon-title">Plastic surgeon</p>
+          </button>
+        </div>
+        <!-- Surgeon Card 9 -->
+        <div
+                class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center"
+        >
+          <button class="surgeon-card">
+            <img
+                    src="images/surgeon9.jpeg"
+                    alt="Svetlana A. Avagyan"
+                    class="surgeon-image"
+            />
+            <h3 class="surgeon-name">Svetlana A. Avagyan</h3>
+            <p class="surgeon-title">Plastic surgeon</p>
+          </button>
+        </div>
+        <!-- Surgeon Card 10 -->
+        <div
+                class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center"
+        >
+          <button class="surgeon-card">
+            <img
+                    src="images/surgeon10.jpg"
+                    alt="Mikayel A. Vasilyan"
+                    class="surgeon-image"
+            />
+            <h3 class="surgeon-name">Mikayel A. Vasilyan</h3>
+            <p class="surgeon-title">Plastic surgeon</p>
+          </button>
+        </div>
+        <!-- Surgeon Card 11 -->
+        <div
+                class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center"
+        >
+          <button class="surgeon-card">
+            <img
+                    src="images/surgeon11.png"
+                    alt="Nune A. Issagholyan"
+                    class="surgeon-image"
+            />
+            <h3 class="surgeon-name">Nune A. Issagholyan</h3>
+            <p class="surgeon-title">Plastic surgeon</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/plastic-surgeons.js' %}"></script>
+{% endblock %}

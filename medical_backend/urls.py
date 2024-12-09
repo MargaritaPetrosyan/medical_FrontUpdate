@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from medical_backend.views import homepage, services, plasticSurgery, dentistry, clinics
+from medical_backend.views import homepage, services, plasticSurgery, dentistry, clinics, plasticSurgeons, dentists
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,5 +25,8 @@ urlpatterns = [
     path('services/', services, name='services'),
     path('plastic-surgery/', plasticSurgery, name='plasticSurgery'),
     path('dentistry/', dentistry, name='dentistry'),
-    path('clinics/', clinics, name='clinics')
+    path('clinics/', clinics, name='clinics'),
+    path('plastic-surgeons/', plasticSurgeons, name='plasticSurgeons'),
+    path('dentists/', dentists, name='dentists'),
+    path('partner/', dentists, name='partner')
 ]

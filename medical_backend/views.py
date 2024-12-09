@@ -14,3 +14,12 @@ def dentistry(request):
 
 def clinics(request):
     return render(request, 'clinics.html')
+
+def plasticSurgeons(request):
+    return render(request, 'plastic-surgeons.html')
+
+def dentists(request):
+    return render(request, 'dentists.html')
+
+def dentists(request):
+    return render(request, 'partner.html')

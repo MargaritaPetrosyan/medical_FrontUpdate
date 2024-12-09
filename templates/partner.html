@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+
+{% block title %}Become a Partner{% endblock %}
+
+{% block stylesheet %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/partner.css' %}" />
+{% endblock %}
+
+{% block body %}
+
+<main>
+    <section
+            id="partner-section"
+            class="container d-flex align-items-center justify-content-between"
+    >
+        <!-- Left Section -->
+        <div class="left-section">
+            <h2 class="title">Partner with HealMount</h2>
+            <img
+                    src="images/partner.png"
+                    alt="Partner Image"
+                    class="partner_image"
+            />
+            <p>
+                Join HealMount and become a part of our medical tourism network. Let
+                us work together to innovate and bring health solutions to more
+                people worldwide.
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+
+        <!-- Right Section (Form) -->
+        <div class="right-section">
+            <h3 class="form-title">Become a Partner</h3>
+            <form id="partnerForm" class="partner-form">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input
+                            type="text"
+                            class="form-control"
+                            id="firstName"
+                            placeholder="Enter your first name"
+                            required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input
+                            type="text"
+                            class="form-control"
+                            id="lastName"
+                            placeholder="Enter your last name"
+                            required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="whoIsYou">Who are you?</label>
+                    <select class="form-control" id="whoIsYou" required>
+                        <option value="">Select an option</option>
+                        <option value="clinic">Clinic</option>
+                        <option value="touristic">Touristic Company</option>
+                        <option value="hotel">Hotel</option>
+                        <option value="doctor">Doctor</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div
+                        class="form-group optional"
+                        id="otherInput"
+                        style="display: none"
+                >
+                    <label for="otherInputField">Please specify</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-info-circle"></i>
+                        <input
+                                type="text"
+                                class="form-control"
+                                id="otherInputField"
+                                placeholder="Enter your variant"
+                        />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country/Region</label>
+                    <input
+                            type="text"
+                            class="form-control"
+                            id="country"
+                            placeholder="Enter your country/region"
+                            required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="whyPartner"
+                    >Why are you interested in partnering with HealMount?</label
+                    >
+                    <textarea
+                            class="form-control"
+                            id="whyPartner"
+                            rows="4"
+                            placeholder="Describe your interest"
+                            required
+                    ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/partner.js' %}"></script>
+{% endblock %}}
