@@ -10,9 +10,10 @@
 {% block body %}
 <div class="auth-container">
   <div class="auth-card">
-    <h2>Create an Account</h2>
-    <p>Register a new account to get started</p>
-    <form id="registerForm">
+    <h2>Create an Account bebebe</h2>
+    <p>Register a new account to get started bebebe</p>
+    <form method="post" id="registerForm"  action="{% url 'account_signup' %}">
+      {% csrf_token %}
       <div class="form-group">
         <label for="name">Name</label>
         <input type="text" name="username" id="name" placeholder="Your name" required />

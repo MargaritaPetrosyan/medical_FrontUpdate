@@ -1,15 +1,12 @@
 {% extends "base.html" %} 
 
-
 {% block title %}Login{% endblock %} 
 
-{% block stylesheet %} 
 {% load static %}
-<link rel="stylesheet" href="{% static 'css/login-register.css' %}" />
-{% endblock %}
 
 {% block body %}
 <div class="auth-container">
+  <link rel="stylesheet" href="{% static 'css/login-register.css' %}" />
   <div class="auth-card">
     <h2>Sign in</h2>
     <p>Log in with your HealMount account</p>
