@@ -2,11 +2,6 @@
 
 {% block title %}HealMount - Medical Tourism Platform{% endblock %} 
 
-{% block stylesheet %}
-{% load static %}
-<link rel="stylesheet" href="{% static 'css/style.css' %}" />
-{% endblock %} 
-
 {% block main %}
 {% load static %}
   <!-- Services Section -->
@@ -408,4 +403,5 @@
     window.location.href = "clinics.html"; // Redirects to the plastic-surgery page
   });
 </script>
+<script src="{% static 'js/script.js' %}" />
 {% endblock %} 
