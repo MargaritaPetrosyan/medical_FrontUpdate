@@ -3,7 +3,7 @@
 
 {% block title %}Login{% endblock %} 
 
-{% block stylesheet %} 
+{% block stylesheet %}
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/login-register.css' %}" />
 {% endblock %}
@@ -16,7 +16,7 @@
     <form id="loginForm" method="post" action="{% url 'account_login' %}">
       {% csrf_token %}
       <div class="form-group">
-        <label for="login">Email Address</label>
+        <label for="loginUsername">Email Address</label>
         <input
           type="text"
           name="login"
@@ -35,6 +35,19 @@
           required
         />
       </div>
+
+      {% if form.errors %}
+      <ul>
+        {% for field, errors in form.errors.items %}
+        <li>{{ field }}:
+          {% for error in errors %}
+          {{ error }}
+          {% endfor %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+
       <button type="submit" class="btn btn-primary custom-login-button">
         Log in
       </button>

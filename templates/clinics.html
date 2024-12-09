@@ -1,0 +1,262 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}HealMount - Medical Tourism Platform{% endblock %}
+
+{% block body %}
+
+<main>
+    <link rel="stylesheet" href="{% static 'css/clinics.css' %}" />
+    <section id="clinics" class="clinics my-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Clinics</h2>
+            <div class="row">
+
+
+                <section class="search-container">
+                    <form id="clinicSearchForm">
+                        <input type="text" id="clinicSearch" placeholder="Search for clinics...">
+                        <button type="submit" id="searchButton">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </section>
+
+
+                <!-- News Item 1 -->
+                <button class="clinics-card col-md-4 mb-4">
+                    <img
+                            src="/static/images/clinic1.png"
+                            alt="Clinic 1"
+                            class="clinics-image" style="height: auto; width: 200px; position: relative; margin-left: 70px;"
+                    />
+                    <div class="clinics-content">
+                        <h3>MEDinES</h3>
+                        <p>
+                            Medines is a medical center for plastic and maxillofacial surgery, aesthetic medicine, hair transplantation ...
+                        </p>
+                        <div class="clinics-footer">
+                            <a
+                                    href="https://medines.am/eng/about-us"
+                                    class="clinics-link"
+                            >Learn More <span>&#9654;</span></a
+                            >
+                        </div>
+                    </div>
+                </button>
+
+
+
+
+                <button class="clinics-card col-md-4 mb-4">
+                    <img
+                            src="/static/images/clinic2.jpg"
+                            alt="Clinic 2"
+                            class="clinics-image"
+                            style="height: 220px; width: 350px; position: relative; margin-left: auto;"
+                    />
+                    <div class="clinics-content">
+                        <h3>Eden by Siroon Minas</h3>
+                        <p>
+                            Eden medical center and spa is a leading medical institution in Armenia, founded by ...
+                        </p>
+                        <div class="clinics-footer">
+                            <a
+                                    href="https://www.instagram.com/eden.by.siroon.minas/?hl=en"
+                                    class="clinics-link"
+                            >Learn More <span>&#9654;</span></a
+                            >
+                        </div>
+                    </div>
+                </button>
+
+
+
+
+                <button class="clinics-card col-md-4 mb-4">
+                    <img
+                            src="/static/images/clinic3.png"
+                            alt="Clinic 3"
+                            class="clinics-image" style="width: auto;height: 120px;"
+                    />
+                    <div class="clinics-content">
+                        <h3>Yenokyan Aesthetic</h3>
+                        <p>
+                            Welcome To YeNokyan AESTHETICS!
+                            We offer extensive medical procedures to outbound and inbound patients....
+                        </p>
+                        <div class="clinics-footer">
+                            <a
+                                    href="https://plastica.am/#"
+                                    class="clinics-link"
+                            >Learn More <span>&#9654;</span></a
+                            >
+                        </div>
+                    </div>
+                </button>
+
+                <div class="text-center mt-4">
+                    <a href="#" class="btn btn-primary clinics-more-button"
+                    >View all</a
+                    >
+                </div>
+
+
+                <h3>Dentistry</h3>
+
+                <button class="clinics-card col-md-4 mb-4">
+                    <img
+                            src="/static/images/clinic4.png"
+                            alt="Clinic 4"
+                            class="clinics-image" style="width: auto;height: 210px;"
+                    />
+                    <div class="clinics-content">
+                        <h3>White Castle</h3>
+                        <p>
+                            White Castle is an Armenian dental clinic founded by professional dentists and enthusiasts,...
+                        </p>
+                        <div class="clinics-footer">
+                            <a
+                                    href="https://whitecastle.am/"
+                                    class="clinics-link"
+                            >Learn More <span>&#9654;</span></a
+                            >
+                        </div>
+                    </div>
+                </button>
+
+
+
+                <button class="clinics-card col-md-4 mb-4">
+                    <img
+                            src="/static/images/clinic5.jpg"
+                            alt="Clinic 5"
+                            class="clinics-image"
+                            style="height: 220px; width: 340px; position: relative; margin-left: auto;"
+                    />
+                    <div class="clinics-content">
+                        <h3>Elva Dent</h3>
+                        <p>
+                            Elva Dent e is an Armenian dental clinic founded by professional dentists and enthusiasts...
+                        </p>
+                        <div class="clinics-footer">
+                            <a
+                                    href="https://www.facebook.com/elvadent/"
+                                    class="clinics-link"
+                            >Learn More <span>&#9654;</span></a
+                            >
+                        </div>
+                    </div>
+                </button>
+
+
+
+                <button class="clinics-card col-md-4 mb-4">
+                    <img
+                            src="/static/images/clinic5.svg"
+                            alt="Clinic 6"
+                            class="clinics-image" style="width: 350px; height: auto;"
+                    />
+                    <div class="clinics-content">
+                        <h3>Medesy</h3>
+                        <p>
+                            The largest Center of Implantation of Teeth and Stomatology “Medesy” offers its clients affordable...
+                        </p>
+                        <div class="clinics-footer">
+                            <a
+                                    href="https://medesy.am/en/"
+                                    class="clinics-link"
+                            >Learn More <span>&#9654;</span></a
+                            >
+                        </div>
+                    </div>
+                </button>
+
+                <div class="text-center mt-4">
+                    <a href="#" class="btn btn-primary clinics-more-button"
+                    >View all</a
+                    >
+                </div>
+            </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-background">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Left Text Section -->
+                    <div class="col-md-6 text-left">
+                        <h2 class="contact-heading">SPEAK WITH OUR EXPERTS</h2>
+                        <p>
+                            Contact us to understand how we can support your health
+                            innovation needs.
+                        </p>
+                        <a href="#" class="btn btn-primary schedule-call-button"
+                        >Schedule a free call now</a
+                        >
+
+                        <!-- Contact Details -->
+                        <div class="contact-details mt-4">
+                            <h5>Contact us</h5>
+                            <p><strong>Email:</strong> contact@healmount.com</p>
+                            <p><strong>Phone:</strong> +374 44 43 48 41</p>
+                            <a
+                                    href="https://www.linkedin.com/company/vickino"
+                                    target="_blank"
+                                    class="linkedin-link"
+                            >
+                                <i class="fab fa-linkedin"></i> Follow us on LinkedIn
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column for Form -->
+                    <div class="col-md-6">
+                        <div class="contact-form-wrapper">
+                            <h2 class="form-title">SEND US A MESSAGE</h2>
+                            <form>
+                                <div class="form-group">
+                                    <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Name"
+                                            required
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <input
+                                            type="email"
+                                            class="form-control"
+                                            placeholder="Email"
+                                            required
+                                    />
+                                </div>
+                                <div class="form-group">
+                      <textarea
+                              class="form-control"
+                              rows="4"
+                              placeholder="Your message"
+                              required
+                      ></textarea>
+                                </div>
+                                <button
+                                        type="submit"
+                                        class="btn btn-primary send-message-button"
+                                >
+                                    Send now
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/clinics.js' %}"></script>
+{% endblock %}}

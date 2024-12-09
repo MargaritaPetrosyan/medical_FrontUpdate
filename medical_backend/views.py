@@ -8,3 +8,9 @@ def services(request):
 
 def plasticSurgery(request):
     return render(request, 'plastic-surgery.html')
+
+def dentistry(request):
+    return render(request, 'dentistry.html')
+
+def clinics(request):
+    return render(request, 'clinics.html')

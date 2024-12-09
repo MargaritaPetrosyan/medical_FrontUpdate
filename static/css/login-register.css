@@ -1,7 +1,7 @@
 /* General Styles */
 body {
   font: Mulish;
-  background-image: url("images/background1.png");
+  background-image: url("/static/images/background1.png");
   display: flex;
   justify-content: center;
   align-items: center;

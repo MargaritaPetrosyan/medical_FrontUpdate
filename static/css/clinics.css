@@ -1,0 +1,289 @@
+body {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9ff;
+  background-image: url("/static/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body .clinics {
+  margin-top: 100px !important;
+}
+
+.clinics {
+  background-color: #ecf4fc;
+  padding: 15rem 0;
+  border-radius: 25px;
+  max-width: 90%;
+  margin: 150px auto 0 auto; /* Set margin-top to 150px */
+  opacity: 95%;
+  box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
+}
+
+.clinics h2 {
+  font-weight: 500;
+  font-family: "Mulish", sans-serif;
+  color: #333;
+  margin-top: -170px;
+  text-align: center; /* Center align the text */
+}
+
+/* News Card Styling */
+.clinics-card {
+  width: 340px;
+  height: 400px;
+  background-color: #ecf4fc;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+.clinics-card:hover {
+  transform: translateY(-5px);
+  /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: #91c4f1;
+}
+
+/* News Image Styling */
+.clinics-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* News Content Styling */
+.clinics-content {
+  padding: 1.5rem;
+  position: relative;
+}
+
+.clinics-content h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font: Mulish;
+}
+
+.clinics-content p {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+/* Footer with Date and Learn More Link */
+.clinics-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clinics-date {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.clinics-link {
+  color: #6d98d9;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.clinics-link span {
+  font-size: 1rem;
+  margin-left: 0.3rem;
+}
+
+/* Access More News Button */
+.clinics-more-button {
+  background-color: #6d98d9;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  border-color: #567faa;
+}
+.clinics-more-button:hover {
+  background-color: #6d98d9;
+}
+
+/* General Section Styling */
+.contact-section {
+  padding: 2rem 0;
+}
+
+.contact-background {
+  background-color: #ecf4fc;
+  padding: 3rem 0;
+  border-radius: 25px;
+  position: relative;
+  max-width: 90%;
+  margin: auto;
+}
+
+/* Left Text Section Styling */
+.text-left {
+  color: #1a1a1a;
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font: Mulish;
+}
+
+.schedule-call-button {
+  background-color: #6d98d9;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  margin-left: 2px;
+}
+
+/* Contact Details */
+.contact-details h5 {
+  font-weight: 700;
+  margin-top: 2rem;
+  color: #333;
+}
+
+.linkedin-link {
+  display: flex;
+  align-items: center;
+  color: #6d98d9;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.linkedin-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+}
+
+/* Right Column Form Styling */
+.contact-form-wrapper {
+  background-color: #87aee7;
+  opacity: 90%;
+  /* Blue background */
+  padding: 2rem;
+  border-radius: 12px;
+  color: #ffffff;
+}
+
+.form-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.form-control::placeholder {
+  color: #ccc;
+}
+
+.form-control:focus {
+  border-color: #ffffff;
+  box-shadow: none;
+}
+
+.send-message-button {
+  background-color: #ffffff;
+  color: #458ff6;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  border: none;
+}
+
+.send-message-button:hover {
+  background-color: #dbe9ff;
+}
+
+.search-container {
+  margin: 15px auto; /* Add some space around */
+  display: flex;
+  justify-content: center; /* Center the search bar horizontally */
+  align-items: center;
+}
+
+#clinicSearch {
+  width: 300px; /* Width of the input field */
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#clinicSearch:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#searchButton {
+  background-color: #6d98d9;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: auto;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#searchButton i {
+  font-size: 1rem;
+}
+
+#searchButton:hover {
+  background-color: #567faa;
+}
+
+#searchButton:focus {
+  outline: none;
+}
+
+/* Responsive Design for Search Bar */
+@media (max-width: 768px) {
+  #clinicSearch {
+    width: 200px; /* Narrower input for smaller screens */
+  }
+
+  #searchButton {
+    padding: 8px 12px;
+  }
+}
