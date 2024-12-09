@@ -1,0 +1,8 @@
+/* Footer */
+.footer {
+  background: linear-gradient(90deg, #8cc7f8, #6d98d9);
+  /* Linear gradient from left to right */
+  padding: 2rem 0;
+  color: white;
+  text-align: center;
+}
