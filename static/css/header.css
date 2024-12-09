@@ -1,0 +1,147 @@
+/* General Header Styling */
+.header {
+  position: fixed;
+  /* Keeps the header at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Makes the header span the full width */
+  z-index: 100;
+  /* Ensures the header stays above other elements */
+  background-color: #ecf4fc;
+  /* Background color for visibility */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Optional shadow for separation */
+  padding: 0.2rem 0;
+}
+
+.logo {
+  width: 120px;
+  /* Set a maximum width for the logo */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin-left: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  /* Maximum width */
+  min-width: 320px;
+  /* Minimum width for smaller devices */
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 2vw, 3rem);
+  /* Minimum 1.5rem, adjusts with 2vw, max 3rem */
+}
+
+.col {
+  flex: 1;
+  /* Equal width columns */
+  min-width: 200px;
+  /* Prevents columns from becoming too narrow */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-menu {
+  margin-left: auto;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  /* Display nav links horizontally */
+  gap: 0.3rem;
+}
+
+/* Navigation Links */
+.nav-link {
+  color: rgba(0, 0, 0, 0.5);
+  /* Black with 50% opacity */
+  font-weight: 500;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: rgba(0, 0, 0, 0.8);
+  /* Darker on hover */
+}
+
+.nav-item {
+  position: relative;
+  /* Needed for positioning the dropdown */
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  /* Position it below the parent */
+  left: 0;
+  background-color: #ecf4fc;
+  opacity: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+  /* Show the dropdown when hovering over the parent */
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: #555;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+  background-color: #91c4f1;
+  color: #000;
+  border-radius: 12px;
+}
+
+.nav-link i {
+  font-size: 12px;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover .nav-link i {
+  transform: rotate(180deg);
+  /* Optional rotation when hovering */
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optional Styling */
+.page-section {
+  height: 100vh;
+  /* Just for demonstration */
+  padding: 50px;
+  text-align: center;
+  background-color: #f9f9ff;
+  margin-bottom: 10px;
+}
