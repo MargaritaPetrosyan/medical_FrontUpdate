@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from medical_backend.views import homepage, services, plasticSurgery, faceLift, blepharoplasty, dentistry, clinics, plasticSurgeons, dentists, rhinoplasty, liposuction, abdominoplasty, mamoplasty, lip, brachioplasty, lipofilling
+from medical_backend.views import homepage, services, plasticSurgery, faceLift, blepharoplasty, dentistry, clinics, plasticSurgeons, dentists, rhinoplasty, liposuction, abdominoplasty, mamoplasty, lip, brachioplasty, lipofilling, partner
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,7 +24,7 @@ urlpatterns = [
     path('', homepage, name='homepage'),
     path('services/', services, name='services'),
     path('plastic-surgery/', plasticSurgery, name='plasticSurgery'),
-    path('plastic-surgery/face-lift', faceLift, name='faceLift'),
+    path('plastic-surgery/face-lift', faceLift, name='face-lift'),
     path('plastic-surgery/blepharoplasty', blepharoplasty, name='blepharoplasty'),
     path('plastic-surgery/rhinoplasty', rhinoplasty, name='rhinoplasty'),
     path('plastic-surgery/liposuction', liposuction, name='liposuction'),
@@ -37,5 +37,5 @@ urlpatterns = [
     path('clinics/', clinics, name='clinics'),
     path('plastic-surgeons/', plasticSurgeons, name='plasticSurgeons'),
     path('dentists/', dentists, name='dentists'),
-    path('partner/', dentists, name='partner')
+    path('partner/', partner, name='partner')
 ]

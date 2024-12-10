@@ -48,5 +48,5 @@ def plasticSurgeons(request):
 def dentists(request):
     return render(request, 'dentists.html')
 
-def dentists(request):
+def partner(request):
     return render(request, 'partner.html')

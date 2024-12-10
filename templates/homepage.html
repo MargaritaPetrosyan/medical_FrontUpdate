@@ -39,6 +39,7 @@
             alt="Dentistry"
             class="dentistry-icon"
           />
+
           <h3>Dentistry</h3>
           <p>
             Receive high-quality dental care in Armenia with experienced
@@ -387,7 +388,7 @@
   document
     .getElementById("plasticSurgeryButton")
     .addEventListener("click", function () {
-      window.location.href = "plastic-surgery.html"; // Redirects to the plastic-surgery page
+      window.location.href = "{% url 'plasticSurgery' %}"; 
     });
 </script>
 
@@ -395,13 +396,13 @@
   document
     .getElementById("dentistry")
     .addEventListener("click", function () {
-      window.location.href = "dentistry.html"; // Redirects to the plastic-surgery page
+      window.location.href = "{% url 'dentistry' %}"; 
     });
 </script>
 
 <script>
   document.getElementById("clinics").addEventListener("click", function () {
-    window.location.href = "clinics.html"; // Redirects to the plastic-surgery page
+    window.location.href = "{% url 'clinics' %}"; 
   });
 </script>
 {% endblock %} 
