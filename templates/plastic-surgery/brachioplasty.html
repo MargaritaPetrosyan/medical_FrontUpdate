@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}HealMount - Medical Tourism Platform{% endblock %}
+
+{% block body %}
+
+<main>
+    <link rel="stylesheet" href="{% static 'css/text.css' %}" />
+    <section class="service-section my-5">
+        <div class="container">
+          <h1 class="service-title">Brachioplasty</h1>
+          <div class="custom-divider"></div>
+          <div class="service-content">
+            <div class="service-image"></div>
+            <div class="service-description">
+              <h2>General information</h2>
+              <p>
+                An arm lift is a popular cosmetic procedure that removes excess
+                skin from the under part of your arm from the armpit to the
+                elbow. While exercise can strengthen your upper arm muscles, it
+                cannot tighten the skin overlying the muscles. Patients choose
+                this procedure because droopy under-arm skin is hard to hide,
+                especially if you want to wear short sleeves.
+              </p>
+              <h2>Before Surgery</h2>
+              <> An initial visit with your plastic surgeon may take place via
+              telehealth or in person. Your surgeon will review your medical
+              history including previous surgeries, medications you are taking,
+              and conditions that may put you at risk for surgery. During an
+              in-person visit, your plastic surgeon will examine you, assess
+              your goals, and determine whether an arm lift procedure will give
+              you the results you seek. Your surgeon may recommend that you quit
+              smoking for a period of time or discontinue medication before
+              surgery to ensure the best possible outcome.
+
+              <h2>Understanding the Risks</h2>
+              <p>
+                An arm lift carries the same risks as any other standard minor
+                surgery. These include the risk of bleeding and blood clots,
+                infection, and risks associated with anesthesia. Your doctor
+                will discuss these possibilities with you.
+              </p>
+
+              <h2>Pre-surgical Testing</h2>
+              <p>
+                Once your surgery has been scheduled, you will meet with an
+                anesthesia specialist to ensure you are in good health.
+                Depending on your health, you may be scheduled for pre-surgical
+                testing that can include blood work, an EKG, or other tests to
+                ensure you are ready for surgery.
+              </p>
+              <h2>On the Day of Your Brachioplasty</h2>
+              <p>
+                A brachioplasty procedure typically takes about one to two
+                hours. During this time, your surgeon will make an incision in
+                your upper arm, remove excess skin, then tighten and smooth the
+                remaining skin. You will be discharged the same day. Your
+                Recovery
+              </p>
+              <h2>Recovery</h2>
+              <p>
+                You will wear compression garments for about four to six weeks
+                to minimize swelling. You should be able to resume your normal
+                activities within one week, but your doctor will recommend that
+                you avoid major physical activity, particularly heavy lifting,
+                for up to six weeks. Your doctor will see you for a
+                post-operative clinic visit to examine your scar and to ensure
+                you are healing in a timely fashion.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section">
+        <div class="contact-background">
+          <div class="container">
+            <div class="row align-items-center">
+              <!-- Left Text Section -->
+              <div class="col-md-6 text-left">
+                <h2 class="contact-heading">SPEAK WITH OUR EXPERTS</h2>
+                <p>Book your consultation now.</p>
+                <a href="#" class="btn btn-primary schedule-call-button"
+                  >Schedule a free call now</a
+                >
+
+                <!-- Contact Details -->
+                <div class="contact-details mt-4">
+                  <h5>Contact us</h5>
+                  <p><strong>Email:</strong> contact@healmount.com</p>
+                  <p><strong>Phone:</strong> +374 44 43 48 41</p>
+                  <a
+                    href="https://www.linkedin.com/company/vickino"
+                    target="_blank"
+                    class="linkedin-link"
+                  >
+                    <i class="fab fa-linkedin"></i> Follow us on LinkedIn
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right Column for Form -->
+              <div class="col-md-6">
+                <div class="contact-form-wrapper">
+                  <h2 class="form-title">SEND US A MESSAGE</h2>
+                  <form>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Name"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        rows="4"
+                        placeholder="Your message"
+                        required
+                      ></textarea>
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn-primary send-message-button"
+                    >
+                      Send now
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+{% endblock %}

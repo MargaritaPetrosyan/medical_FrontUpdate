@@ -147,23 +147,26 @@
 {% endblock %}
 
 {% block scripts %}
+<!-- for plastic surgery button-->
 <script>
     document
-        .getElementById("plasticSurgeryButton")
-        .addEventListener("click", function () {
-            window.location.href = "plastic-surgery.html"; // Redirects to the plastic-surgery page
-        });
-</script>
-<script>
+      .getElementById("plasticSurgeryButton")
+      .addEventListener("click", function () {
+        window.location.href = "{% url 'plasticSurgery' %}"; 
+      });
+  </script>
+  
+  <script>
     document
-        .getElementById("dentistry")
-        .addEventListener("click", function () {
-            window.location.href = "dentistry.html";
-        });
-</script>
-<script>
+      .getElementById("dentistry")
+      .addEventListener("click", function () {
+        window.location.href = "{% url 'dentistry' %}"; 
+      });
+  </script>
+  
+  <script>
     document.getElementById("clinics").addEventListener("click", function () {
-        window.location.href = "clinics.html";
+      window.location.href = "{% url 'clinics' %}"; 
     });
-</script>
-{% endblock %}
+  </script>
+  {% endblock %} 

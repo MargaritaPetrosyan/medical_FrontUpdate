@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}HealMount - Medical Tourism Platform{% endblock %}
+
+{% block body %}
+
+<main>
+    <link rel="stylesheet" href="{% static 'css/text.css' %}" />
+    <section class="service-section my-5">
+        <div class="container">
+          <h1 class="service-title">Liposuction</h1>
+          <div class="custom-divider"></div>
+          <div class="service-content">
+            <div class="service-image"></div>
+            <div class="service-description">
+              <h2>General information</h2>
+              <p>
+                Liposuction, or simply lipo, is a type of fat removal procedure
+                used in plastic surgery. Evidence does not support an effect on
+                weight beyond a couple of months and it does not appear to
+                affect obesity related problems. In the United States it is the
+                most commonly done cosmetic surgery. The procedure may be
+                performed under general, regional, or local anesthesia. It then
+                involves using a cannula and negative pressure to suck out fat.
+                It is believed to work best on people with a normal weight and
+                good skin elasticity.
+              </p>
+              <h2>Preparation for surgery</h2>
+              <p>
+                Before your liposuction procedure, the surgeon may mark circles
+                and lines on the areas of your body to be treated. Photos also
+                may be taken so that before and after images can be compared.
+                How your liposuction procedure is done depends on the specific
+                technique that’s used. Your surgeon will select the appropriate
+                technique based on your treatment goals, the area of your body
+                to be treated, and whether you have had other liposuction
+                procedures in the past. Tumescent liposuction. This is the most
+                common type of liposuction. The surgeon injects a sterile
+                solution — a mixture of salt water, which aids fat removal, an
+                anesthetic (lidocaine) to relieve pain and a drug (epinephrine)
+                that causes the blood vessels to constrict — into the area
+                that’s being treated. The fluid mixture causes the affected area
+                to swell and stiffen. The surgeon then makes small cuts into
+                your skin and inserts a thin tube called a cannula under your
+                skin. The cannula is connected to a vacuum that suctions fat and
+                fluids from your body. Your body fluid may be replenished
+                through an intravenous (IV) line. Ultrasound-assisted
+                liposuction (UAL). This type of liposuction is sometimes used in
+                conjunction with traditional liposuction. During UAL, the
+                surgeon inserts a metal rod that emits ultrasonic energy under
+                your skin. This ruptures the fat-cell walls and breaks down the
+                fat for easier removal. A new generation of UAL called
+                VASER-assisted liposuction uses a device that may improve skin
+                contouring and reduce the chance of skin injuries.
+                Laser-assisted liposuction (LAL). This technique uses
+                high-intensity laser light to break down fat for removal. During
+                LAL, the surgeon inserts a laser fiber through a small incision
+                in the skin and emulsifies fat deposits. The fat is then removed
+                via a cannula. Power-assisted liposuction (PAL). This type of
+                liposuction uses a cannula that moves in a rapid back-and-forth
+                motion. This vibration allows the surgeon to pull out tough fat
+                more easily and faster. PAL may sometimes cause less pain and
+                swelling and can allow the surgeon to remove fat with more
+                precision. Your surgeon may select this technique if large
+                volumes of fat need to be removed or if you’ve had a previous
+                liposuction procedure.
+              </p>
+              <h2>Results</h2>
+              <p>
+                After liposuction, swelling typically subsides within a few
+                weeks. By this time, the treated area should look less bulky.
+                Within several months, expect the treated area to have a leaner
+                appearance. It’s natural for skin to lose some firmness with
+                aging, but liposuction results are generally long lasting as
+                long as you maintain your weight. If you gain weight after
+                liposuction, your fat distribution may change. For example, you
+                may accumulate fat around your abdomen regardless of what areas
+                were originally treated.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section">
+        <div class="contact-background">
+          <div class="container">
+            <div class="row align-items-center">
+              <!-- Left Text Section -->
+              <div class="col-md-6 text-left">
+                <h2 class="contact-heading">SPEAK WITH OUR EXPERTS</h2>
+                <p>Book your consultation now.</p>
+                <a href="#" class="btn btn-primary schedule-call-button"
+                  >Schedule a free call now</a
+                >
+
+                <!-- Contact Details -->
+                <div class="contact-details mt-4">
+                  <h5>Contact us</h5>
+                  <p><strong>Email:</strong> contact@healmount.com</p>
+                  <p><strong>Phone:</strong> +374 44 43 48 41</p>
+                  <a
+                    href="https://www.linkedin.com/company/vickino"
+                    target="_blank"
+                    class="linkedin-link"
+                  >
+                    <i class="fab fa-linkedin"></i> Follow us on LinkedIn
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right Column for Form -->
+              <div class="col-md-6">
+                <div class="contact-form-wrapper">
+                  <h2 class="form-title">SEND US A MESSAGE</h2>
+                  <form>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Name"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        rows="4"
+                        placeholder="Your message"
+                        required
+                      ></textarea>
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn-primary send-message-button"
+                    >
+                      Send now
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+{% endblock %}
