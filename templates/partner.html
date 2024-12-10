@@ -27,7 +27,7 @@
                 us work together to innovate and bring health solutions to more
                 people worldwide.
             </p>
-            <a href="#" class="btn btn-primary">Learn More</a>
+            <a href="#" id="partnershipbutton" class="btn btn-primary">Learn More</a>
         </div>
 
         <!-- Right Section (Form) -->
@@ -121,6 +121,19 @@
 
 {% endblock %}
 
+
+
 {% block scripts %}
 <script src="{% static 'js/partner.js' %}"></script>
-{% endblock %}}
+
+
+  <script>
+    // Redirect to new pages when buttons are clicked
+    document
+      .getElementById("partnershipbutton")
+      .addEventListener("click", function () {
+        window.location.href = "{% url 'partnership' %}";
+      });
+  
+  </script>
+{% endblock %}

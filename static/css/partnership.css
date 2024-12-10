@@ -1,0 +1,188 @@
+body {
+    font-family: "Mulish", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9ff;
+    background-image: url("/static/images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    /* Maximum width */
+    min-width: 320px;
+    /* Minimum width for smaller devices */
+    margin: auto;
+    margin-top: 150px;
+  }
+  
+  .partnership-section {
+    background-color: #ecf4fc;
+    padding: 3rem 0;
+    border-radius: 25px;
+    max-width: 90%;
+    margin: 150px auto 0 auto; /* Set margin-top to 150px */
+    opacity: 95%;
+    box-sizing: border-box;
+    margin-top: 100px !important;
+  }
+  
+  .partnership-title {
+    font-size: 2.5rem;
+    font-family: "Mulish", sans-serif;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .partnership-content {
+    display: flex; /* Use flexbox for horizontal alignment */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Add spacing between items */
+    align-items: center; /* Align items vertically */
+  }
+  
+  .partnership-description {
+    text-align: justify; /* Justify text for better readability */
+    position: relative;
+  }
+  
+  .partnership-description p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    position: relative;
+  }
+  
+  .partnership-description h2 {
+    font-size: 1.5rem;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #6ba0d7;
+  }
+  
+  .custom-divider {
+    width: 90%; /* Adjust width as needed */
+    height: 2px; /* Adjust thickness */
+    background: linear-gradient(to right, #6ba0d7, #f9f9ff); /* Gradient effect */
+    margin: 30px auto; /* Center it and add spacing */
+    border-radius: 5px; /* Make the edges rounded */
+  }
+  
+  /* General Section Styling */
+  .contact-section {
+    padding: 2rem 0;
+  }
+  
+  .contact-background {
+    background-color: #ecf4fc;
+    padding: 3rem 0;
+    border-radius: 25px;
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+  }
+  
+  /* Left Text Section Styling */
+  .text-left {
+    color: #1a1a1a;
+  }
+  
+  .contact-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font: Mulish;
+  }
+  
+  .schedule-call-button {
+    background-color: #6d98d9;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 2px;
+  }
+  
+  /* Contact Details */
+  .contact-details h5 {
+    font-weight: 700;
+    margin-top: 2rem;
+    color: #333;
+  }
+  
+  .linkedin-link {
+    display: flex;
+    align-items: center;
+    color: #6d98d9;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 1rem;
+  }
+  
+  .linkedin-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+  }
+  
+  /* Right Column Form Styling */
+  .contact-form-wrapper {
+    background-color: #87aee7;
+    opacity: 90%;
+    /* Blue background */
+    padding: 2rem;
+    border-radius: 12px;
+    color: #ffffff;
+  }
+  
+  .form-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .form-control::placeholder {
+    color: #ccc;
+  }
+  
+  .form-control:focus {
+    border-color: #ffffff;
+    box-shadow: none;
+  }
+  
+  .send-message-button {
+    background-color: #ffffff;
+    color: #458ff6;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    border: none;
+  }
+  
+  .send-message-button:hover {
+    background-color: #dbe9ff;
+  }
+  
