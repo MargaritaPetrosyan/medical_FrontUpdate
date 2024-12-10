@@ -3,7 +3,7 @@ body {
   background-color: #f9f9ff;
   margin: 0;
   padding: 0;
-  background-image: url("images/background.jpg");
+  background-image: url("/static/images/background.jpg");
 }
 
 #partner-section {

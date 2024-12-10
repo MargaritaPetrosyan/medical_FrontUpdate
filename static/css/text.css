@@ -1,25 +1,8 @@
 body {
   font-family: "Mulish", sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9ff;
   background-image: url("/static/images/background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  
 }
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  /* Maximum width */
-  min-width: 320px;
-  /* Minimum width for smaller devices */
-  margin: auto;
-  margin-top: 150px;
-}
-
 .service-section {
   background-color: #ecf4fc;
   padding: 3rem 0;
