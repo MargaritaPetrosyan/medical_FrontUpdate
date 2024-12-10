@@ -86,18 +86,7 @@ body {
   top: calc(50% - 12px);
   cursor: pointer;
 }
-.custom-send-button {
-  background-color: #6d98d9 !important;
-  border-color: #6d98d9 !important;
-  width: 120px;
-  border-radius: 20px !important;
-}
-.custom-login-button {
-  background-color: #6d98d9 !important;
-  border-color: #6d98d9 !important;
-  width: 120px;
-  border-radius: 20px !important;
-}
+
 /* Button Styling */
 .btn {
   background-color: #6d98d9;

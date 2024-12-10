@@ -2,193 +2,113 @@
 
 {% block title %}Dentists{% endblock %}
 
-{% block stylesheet %}
 {% load static %}
-<link rel="stylesheet" href="{% static 'css/dentistry.css' %}" />
-{% endblock %}
 
 {% block body %}
 
 <main>
-    <!-- Plastic Surgeons Section -->
-    <section id="dentist" class="dentist my-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Dentists</h2>
-            <!-- Search Bar Section -->
-            <section class="search-container">
-                <form id="doctorSearchForm">
-                    <input
-                            type="text"
-                            id="doctorSearch"
-                            placeholder="Search for Doctors..."
-                    />
-                    <button type="submit" id="searchButton">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </form>
-            </section>
+    <!-- Dentistry Section -->
+    <section class="services my-5" style="margin-top: 120px">
+        <link rel="stylesheet" href="{% static 'css/dentistry.css' %}" />
+      <div class="container">
+        <h2 class="text-center">Dentistry</h2>
 
-            <div class="row justify-content-center">
-                <!-- Dentist Card 1 -->
-                <div
-                        class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center"
-                >
-                    <button class="dentist-card">
-                        <img
-                                src="/static/images/dentist1.png"
-                                alt="David Hovhannisyan"
-                                class="dentist-image"
-                        />
-                        <h3 class="dentist-name">David Hovhannisyan</h3>
-                        <p class="dentist-title">
-                            Founder and CEO of White Castle Dental Clinic
-                        </p>
-                    </button>
-                </div>
-                <!-- dentist Card 2 -->
-                <div
-                        class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center"
-                >
-                    <button class="dentist-card">
-                        <img
-                                src="/static/images/dentist2.png"
-                                alt="Naira Hovhannisyan"
-                                class="dentist-image"
-                        />
-                        <h3 class="dentist-name">Naira Hovhannisyan</h3>
-                        <p class="dentist-title">General Dentist</p>
-                    </button>
-                </div>
-                <!-- dentist Card 3 -->
-                <div
-                        class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center"
-                >
-                    <button class="dentist-card">
-                        <img
-                                src="/static/images/dentist3.png"
-                                alt="David Yeganyan"
-                                class="dentist-image"
-                        />
-                        <h3 class="dentist-name">David Yeganyan</h3>
-                        <p class="dentist-title">General Dentist</p>
-                    </button>
-                </div>
-                <!-- dentist Card 4 -->
-                <div
-                        class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center"
-                >
-                    <button class="dentist-card">
-                        <img
-                                src="/static/images/dentist4.png"
-                                alt="David Grigoryan"
-                                class="dentist-image"
-                        />
-                        <h3 class="dentist-name">David Grigoryan</h3>
-                        <p class="dentist-title">Orthodontist</p>
-                    </button>
-                </div>
-                <!-- dentist Card 5 -->
-                <div
-                        class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center"
-                >
-                    <button class="dentist-card">
-                        <img
-                                src="/static/images/dentist5.png"
-                                alt="Anghela Papoyan"
-                                class="dentist-image"
-                        />
-                        <h3 class="dentist-name">Anghela Papoyan</h3>
-                        <p class="dentist-title">Pediatric Dentist</p>
-                    </button>
-                </div>
-                <!-- dentist Card 6 -->
-                <div
-                        class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center"
-                >
-                    <button class="dentist-card">
-                        <img
-                                src="/static/images/dentist6.png"
-                                alt="Martik Hartoonian"
-                                class="dentist-image"
-                        />
-                        <h3 class="dentist-name">Martik Hartoonian</h3>
-                        <p class="dentist-title">General Dentist</p>
-                    </button>
-                </div>
-                <!-- dentist Card 7 -->
-                <div
-                        class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center"
-                >
-                    <button class="dentist-card">
-                        <img
-                                src="/static/images/dentist7.png"
-                                alt="Urfa Dehbashyan"
-                                class="dentist-image"
-                        />
-                        <h3 class="dentist-name">Urfa Dehbashyan</h3>
-                        <p class="dentist-title">General Dentist</p>
-                    </button>
-                </div>
-                <!-- dentist Card 8 -->
-                <div
-                        class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center"
-                >
-                    <button class="dentist-card">
-                        <img
-                                src="/static/images/dentist8.png"
-                                alt="Petros Yeranosyan"
-                                class="dentist-image"
-                        />
-                        <h3 class="dentist-name">Petros Yeranosyan</h3>
-                        <p class="dentist-title">General Dentist</p>
-                    </button>
-                </div>
-                <!-- dentist Card 9 -->
-                <div
-                        class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center"
-                >
-                    <button class="dentist-card">
-                        <img
-                                src="/static/images/dentist9.png"
-                                alt="Mariam Aleqyan"
-                                class="dentist-image"
-                        />
-                        <h3 class="dentist-name">Mariam Aleqyan</h3>
-                        <p class="dentist-title">Administrator</p>
-                    </button>
-                </div>
-                <!-- dentist Card 10 -->
-                <div
-                        class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center"
-                >
-                    <button class="dentist-card">
-                        <img
-                                src="/static/images/dentist10.png"
-                                alt="Mariam Karavardanyan"
-                                class="dentist-image"
-                        />
-                        <h3 class="dentist-name">Mariam Karavardanyan</h3>
-                        <p class="dentist-title">Dental assistant</p>
-                    </button>
-                </div>
-                <!-- dentist Card 11 -->
-                <div
-                        class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center"
-                >
-                    <button class="dentist-card">
-                        <img
-                                src="/static/images/dentist11.png"
-                                alt="Lena Harutyunyan"
-                                class="dentist-image"
-                        />
-                        <h3 class="dentist-name">Lena Harutyunyan</h3>
-                        <p class="dentist-title">Dental assistant</p>
-                    </button>
-                </div>
-            </div>
+        <div class="services-list">
+          <!-- Dentistry Services -->
+          <button class="service-button" data-service="Treatment">
+            <img
+              src="/static/images/treatment.png"
+              alt="treatment"
+              class="service-icon"
+              style="width: 70px; height: 70px"
+            />
+            <h3>Teeth Treatment</h3>
+            <p>
+              Root Canal Treatment<br />
+              Teeth restoration <br />Crowns Dental remineralization
+              <br />Endodontic surgery
+            </p>
+          </button>
+
+          <button class="service-button" data-service="Aesthetic ">
+            <img
+              src="/static/images/aesthetic-restoration.png"
+              alt="aesthetic"
+              class="service-icon"
+              style="width: 70px; height: 70px"
+            />
+            <h3>Aesthetic Restoration of Teeth</h3>
+            <p>
+              Veneers <br />
+              Crowns <br />
+              Inlays & Onlays <br />Teeth whitening
+            </p>
+          </button>
+
+          <button class="service-button" data-service="Missing">
+            <img
+              src="/static/images/missing-teeth.png"
+              alt="missing teeth"
+              class="service-icon"
+              style="width: 60px; height: 60px"
+            />
+            <h3>Restoration of Missing Teeth</h3>
+            <p>
+              Dental Implants<br />
+              Dental Bridges<br />
+              Removable partial denture<br />
+              Complete dentures<br />
+              Maryland bridges<br />
+            </p>
+          </button>
+
+          <button class="service-button" data-service="Pediatric">
+            <img
+              src="/static/images/pediatric.png"
+              alt="pediatric
+            class="
+              service-icon
+              style="width: 50px; height: 50px"
+            />
+            <h3>Pediatric Dentistry</h3>
+            <p>
+              Treatment of caries and its complications <br />
+              Preventive dentistry
+            </p>
+          </button>
+
+          <button class="service-button" data-service="Children">
+            <img
+              src="/static/images/children.png"
+              alt="children"
+              class="service-icon"
+              style="width: 50px; height: 50px"
+            />
+            <h3>Children's dental department</h3>
+            <p>
+              Treatment of deciduous teeth Removal of deciduous teeth<br />
+              Orthodontic treatment Caries treatment Teeth stopping
+            </p>
+          </button>
+
+          <button class="service-button" data-service="Peridontology">
+            <img
+              src="/static/images/peridontology.png"
+              alt="peridontology"
+              class="service-icon"
+              style="width: 50px; height: 50px"
+            />
+            <h3>Peridontology</h3>
+            <p>
+              Gingivitis treatment<br />
+              Parodentium treatment <br />
+              Parodentium Gingival treatment
+            </p>
+          </button>
         </div>
+      </div>
     </section>
-</main>
+  </main>
 
 {% endblock %}
 

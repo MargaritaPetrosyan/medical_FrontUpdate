@@ -2,13 +2,11 @@
 
 {% block title %}Register{% endblock %} 
 
-{% block stylesheet %} 
 {% load static %}
-<link rel="stylesheet" href="{% static 'css/login-register.css' %}" />
-{% endblock %}
 
 {% block body %}
 <div class="auth-container">
+  <link rel="stylesheet" href="{% static 'css/login-register.css' %}" />
   <div class="auth-card">
     <h2>Create an Account</h2>
     <p>Register a new account to get started</p>
@@ -63,7 +61,7 @@
       </ul>
       {% endif %}
 
-      <button type="submit" class="btn btn-primary custom-login-button">
+      <button type="submit" class="btn btn-primary">
         Register
       </button>
     </form>

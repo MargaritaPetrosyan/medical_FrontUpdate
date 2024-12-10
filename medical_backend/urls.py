@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from medical_backend.views import homepage, services, plasticSurgery, dentistry, clinics, plasticSurgeons, dentists
+from medical_backend.views import homepage, services, plasticSurgery, faceLift, blepharoplasty, dentistry, clinics, plasticSurgeons, dentists, rhinoplasty, liposuction, abdominoplasty, mamoplasty, lip, brachioplasty, lipofilling
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,6 +24,15 @@ urlpatterns = [
     path('', homepage, name='homepage'),
     path('services/', services, name='services'),
     path('plastic-surgery/', plasticSurgery, name='plasticSurgery'),
+    path('plastic-surgery/face-lift', faceLift, name='faceLift'),
+    path('plastic-surgery/blepharoplasty', blepharoplasty, name='blepharoplasty'),
+    path('plastic-surgery/rhinoplasty', rhinoplasty, name='rhinoplasty'),
+    path('plastic-surgery/liposuction', liposuction, name='liposuction'),
+    path('plastic-surgery/abdominoplasty', abdominoplasty, name='abdominoplasty'),
+    path('plastic-surgery/mamoplasty', mamoplasty, name='mamoplasty'),
+    path('plastic-surgery/lip', lip, name='lip'),
+    path('plastic-surgery/brachioplasty', brachioplasty, name='brachioplasty'),
+    path('plastic-surgery/lipofilling', lipofilling, name='lipofilling'),
     path('dentistry/', dentistry, name='dentistry'),
     path('clinics/', clinics, name='clinics'),
     path('plastic-surgeons/', plasticSurgeons, name='plasticSurgeons'),
