@@ -192,7 +192,7 @@
                             Contact us to understand how we can support your health
                             innovation needs.
                         </p>
-                        <a href="#" class="btn btn-primary schedule-call-button"
+                        <a href="#" id="schedulecallbutton" class="btn btn-primary schedule-call-button"
                         >Schedule a free call now</a
                         >
 
@@ -258,5 +258,16 @@
 {% endblock %}
 
 {% block scripts %}
+
+
+<script>
+  // Redirect to new pages when buttons are clicked
+  document
+    .getElementById("schedulecallbutton")
+    .addEventListener("click", function () {
+      window.location.href = "{% url 'account_login' %}";
+    });
+
+</script>
 <script src="{% static 'js/clinics.js' %}"></script>
 {% endblock %}}

@@ -52,7 +52,7 @@ body .clinics {
   transform: translateY(-5px);
   /* Lift effect on hover */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  background-color: #91c4f1;
+  background-color: #b0c4d4;
 }
 
 /* News Image Styling */
@@ -95,7 +95,7 @@ body .clinics {
 }
 
 .clinics-link {
-  color: #6d98d9;
+  color: #314d6d;
   font-weight: 600;
   text-decoration: none;
 }
@@ -107,7 +107,7 @@ body .clinics {
 
 /* Access More News Button */
 .clinics-more-button {
-  background-color: #6d98d9;
+  background-color: #314d6d;
   color: #ffffff;
   font-weight: 600;
   padding: 0.75rem 2rem;
@@ -116,7 +116,7 @@ body .clinics {
   border-color: #567faa;
 }
 .clinics-more-button:hover {
-  background-color: #6d98d9;
+  background-color: #314d6d;
 }
 
 /* General Section Styling */
@@ -145,7 +145,7 @@ body .clinics {
 }
 
 .schedule-call-button {
-  background-color: #6d98d9;
+  background-color: #314d6d;
   color: #ffffff;
   font-weight: 600;
   padding: 0.75rem 1.5rem;
@@ -166,7 +166,7 @@ body .clinics {
 .linkedin-link {
   display: flex;
   align-items: center;
-  color: #6d98d9;
+  color: #314d6d;
   font-weight: 600;
   text-decoration: none;
   margin-top: 1rem;
@@ -180,7 +180,7 @@ body .clinics {
 
 /* Right Column Form Styling */
 .contact-form-wrapper {
-  background-color: #87aee7;
+  background-color: #b0c4d4;
   opacity: 90%;
   /* Blue background */
   padding: 2rem;
@@ -256,7 +256,7 @@ body .clinics {
 }
 
 #searchButton {
-  background-color: #6d98d9;
+  background-color: #314d6d;
   color: white;
   border: none;
   padding: 10px 15px;

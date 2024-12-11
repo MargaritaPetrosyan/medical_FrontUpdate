@@ -81,8 +81,8 @@ body {
 }
 
 .schedule-call-button {
-  background-color: #6d98d9;
-  color: #ffffff;
+  background-color: #314d6d;
+  color: #f7f4f0;
   font-weight: 600;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
@@ -102,7 +102,7 @@ body {
 .linkedin-link {
   display: flex;
   align-items: center;
-  color: #6d98d9;
+  color: #314d6d;
   font-weight: 600;
   text-decoration: none;
   margin-top: 1rem;
@@ -116,18 +116,18 @@ body {
 
 /* Right Column Form Styling */
 .contact-form-wrapper {
-  background-color: #87aee7;
+  background-color: #b0c4d4;
   opacity: 90%;
   /* Blue background */
   padding: 2rem;
   border-radius: 12px;
-  color: #ffffff;
+  color: #f7f4f0;
 }
 
 .form-title {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #f7f4f0;
   margin-bottom: 1rem;
 }
 
@@ -138,7 +138,7 @@ body {
 .form-control {
   width: 100%;
   padding: 0.75rem;
-  border: 1px solid #ffffff;
+  border: 1px solid #f7f4f0;
   border-radius: 8px;
   font-size: 1rem;
   color: #333;
@@ -149,13 +149,13 @@ body {
 }
 
 .form-control:focus {
-  border-color: #ffffff;
+  border-color: #f7f4f0;
   box-shadow: none;
 }
 
 .send-message-button {
-  background-color: #ffffff;
-  color: #458ff6;
+  background-color: #314d6d;
+  color: #f7f4f0;
   font-weight: 600;
   padding: 0.75rem 2rem;
   border-radius: 8px;

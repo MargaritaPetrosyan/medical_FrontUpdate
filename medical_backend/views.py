@@ -6,7 +6,6 @@ def homepage(request):
 def partnership(request):
     return render(request, 'partnership.html')
 
-
 def services(request):
     return render(request, 'services.html')
 

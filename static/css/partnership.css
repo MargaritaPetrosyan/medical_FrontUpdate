@@ -1,14 +1,8 @@
 body {
     font-family: "Mulish", sans-serif;
-    background-color: #f9f9ff;
     background-image: url("/static/images/background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    
   }
-  
-  
   .partnership-section {
     background-color: #ecf4fc;
     padding: 3rem 0;
@@ -18,6 +12,15 @@ body {
     opacity: 95%;
     box-sizing: border-box;
     margin-top: 100px !important;
+  }
+
+  .partner_image{
+    width: auto;
+    height:auto;
+    position: absolute;
+    opacity: 30%;
+    
+
   }
   
   .partnership-title {
